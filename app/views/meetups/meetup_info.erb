@@ -1,0 +1,17 @@
+
+<ul>
+        <li>What: <%=@meetup.what%></li>
+        <li>Why: <%=@meetup.why%></li>
+        <li>When: <%=@meetup.when%></li>
+        <li>Where: <%=@meetup.where%></li>
+
+        <h3>Attendees</h3>
+          <ul>
+            <% @attendees.each do |att| %>
+            <li><%= att.username %></li>
+            <% end %>
+          </ul>
+
+</ul>
+
+<a href="/meetups">Back to Meetups List?</a>
